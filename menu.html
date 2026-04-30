@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu | Spicy Villa</title>
+    <meta name="description" content="Explore our premium multi-cuisine menu at Spicy Villa.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header id="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-pepper-hot"></i> Spicy <span>Villa</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="menu.html" class="nav-item">Menu</a>
+                <a href="gallery.html" class="nav-item">Gallery</a>
+                <a href="reservations.html" class="nav-item">Reservations</a>
+                <a href="contact.html" class="nav-item">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="menu.html" class="btn btn-outline">Order Now</a>
+                <a href="reservations.html" class="btn btn-primary">Book Table</a>
+                <div class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content fade-in-up">
+            <h1>Our Menu</h1>
+            <p>Taste the Fire of Flavors</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section-padding">
+        <div class="container">
+            <div class="text-center fade-in-up">
+                <h4 class="section-subtitle">Discover</h4>
+                <h2 class="section-title">Our Premium Menu</h2>
+            </div>
+            
+            <!-- Category Tabs -->
+            <div class="menu-tabs fade-in-up">
+                <button class="tab-btn active" data-target="starters">Starters</button>
+                <button class="tab-btn" data-target="main">Main Course</button>
+                <button class="tab-btn" data-target="chinese">Chinese</button>
+                <button class="tab-btn" data-target="fastfood">Fast Food</button>
+                <button class="tab-btn" data-target="desserts">Desserts</button>
+                <button class="tab-btn" data-target="beverages">Beverages</button>
+            </div>
+
+            <!-- Menu Content -->
+            <div class="menu-content fade-in-up">
+                <!-- Starters -->
+                <div class="menu-grid active" id="starters">
+                    <div class="menu-item card">
+                        <div class="item-img">
+                            <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=400&q=80" alt="Paneer Tikka">
+                            <span class="badge badge-popular">Popular</span>
+                        </div>
+                        <div class="item-details">
+                            <h3>Tandoori Paneer Tikka</h3>
+                            <p>Cottage cheese marinated in rich spices and yogurt, roasted in a clay oven.</p>
+                            <div class="item-footer">
+                                <span class="price">₹299</span>
+                                <button class="btn btn-outline btn-sm">Add <i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item card">
+                        <div class="item-img">
+                            <img src="https://images.unsplash.com/photo-1628294895950-9805252327bc?auto=format&fit=crop&w=400&q=80" alt="Chicken Tikka">
+                        </div>
+                        <div class="item-details">
+                            <h3>Spicy Chicken Tikka</h3>
+                            <p>Tender chicken chunks infused with fiery red chilies and traditional spices.</p>
+                            <div class="item-footer">
+                                <span class="price">₹349</span>
+                                <button class="btn btn-outline btn-sm">Add <i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item card">
+                        <div class="item-img">
+                            <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=400&q=80" alt="French Fries">
+                        </div>
+                        <div class="item-details">
+                            <h3>Loaded Peri Peri Fries</h3>
+                            <p>Crispy fries tossed in spicy peri peri mix, topped with cheese sauce.</p>
+                            <div class="item-footer">
+                                <span class="price">₹199</span>
+                                <button class="btn btn-outline btn-sm">Add <i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Course -->
+                <div class="menu-grid" id="main">
+                    <div class="menu-item card">
+                        <div class="item-img">
+                            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=400&q=80" alt="Butter Chicken">
+                            <span class="badge badge-chef">Chef's Special</span>
+                        </div>
+                        <div class="item-details">
+                            <h3>Murgh Makhani (Butter Chicken)</h3>
+                            <p>Classic roasted chicken in a rich, creamy, and mildly spiced tomato gravy.</p>
+                            <div class="item-footer">
+                                <span class="price">₹499</span>
+                                <button class="btn btn-outline btn-sm">Add <i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item card">
+                        <div class="item-img">
+                            <img src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=400&q=80" alt="Dal Makhani">
+                        </div>
+                        <div class="item-details">
+                            <h3>Dal Makhani</h3>
+                            <p>Black lentils slow-cooked overnight with fresh cream and butter.</p>
+                            <div class="item-footer">
+                                <span class="price">₹349</span>
+                                <button class="btn btn-outline btn-sm">Add <i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item card">
+                        <div class="item-img">
+                            <img src="https://images.unsplash.com/photo-1631452180519-c014fe946bc0?auto=format&fit=crop&w=400&q=80" alt="Biryani">
+                            <span class="badge badge-popular">Best Seller</span>
+                        </div>
+                        <div class="item-details">
+                            <h3>Hyderabadi Dum Biryani</h3>
+                            <p>Aromatic basmati rice cooked with tender meat and exquisite whole spices.</p>
+                            <div class="item-footer">
+                                <span class="price">₹449</span>
+                                <button class="btn btn-outline btn-sm">Add <i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Chinese -->
+                <div class="menu-grid" id="chinese">
+                    <div class="menu-item card">
+                        <div class="item-img">
+                            <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=400&q=80" alt="Noodles">
+                        </div>
+                        <div class="item-details">
+                            <h3>Hakka Noodles</h3>
+                            <p>Wok-tossed noodles with fresh crunchy vegetables and soy sauce.</p>
+                            <div class="item-footer">
+                                <span class="price">₹249</span>
+                                <button class="btn btn-outline btn-sm">Add <i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item card">
+                        <div class="item-img">
+                            <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=400&q=80" alt="Manchurian">
+                        </div>
+                        <div class="item-details">
+                            <h3>Veg Manchurian</h3>
+                            <p>Crispy vegetable balls in a spicy, sweet and tangy garlic sauce.</p>
+                            <div class="item-footer">
+                                <span class="price">₹279</span>
+                                <button class="btn btn-outline btn-sm">Add <i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fast Food -->
+                <div class="menu-grid" id="fastfood">
+                    <div class="menu-item card">
+                        <div class="item-img">
+                            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=80" alt="Burger">
+                        </div>
+                        <div class="item-details">
+                            <h3>Villa Signature Burger</h3>
+                            <p>Double patty, melted cheese, crisp lettuce, and our secret spicy sauce.</p>
+                            <div class="item-footer">
+                                <span class="price">₹299</span>
+                                <button class="btn btn-outline btn-sm">Add <i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item card">
+                        <div class="item-img">
+                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=400&q=80" alt="Pizza">
+                            <span class="badge badge-popular">Popular</span>
+                        </div>
+                        <div class="item-details">
+                            <h3>Spicy Pepperoni Pizza</h3>
+                            <p>Wood-fired crust topped with mozzarella, spicy pepperoni, and jalapenos.</p>
+                            <div class="item-footer">
+                                <span class="price">₹499</span>
+                                <button class="btn btn-outline btn-sm">Add <i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-grid" id="desserts">
+                    <div class="menu-item card">
+                        <div class="item-img">
+                            <img src="https://images.unsplash.com/photo-1563805042-7684c8a9e9ce?auto=format&fit=crop&w=400&q=80" alt="Brownie">
+                        </div>
+                        <div class="item-details">
+                            <h3>Sizzling Brownie</h3>
+                            <p>Warm walnut brownie served on a hot sizzler with vanilla ice cream and chocolate sauce.</p>
+                            <div class="item-footer">
+                                <span class="price">₹249</span>
+                                <button class="btn btn-outline btn-sm">Add <i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Beverages -->
+                <div class="menu-grid" id="beverages">
+                    <div class="menu-item card">
+                        <div class="item-img">
+                            <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=400&q=80" alt="Mocktail">
+                        </div>
+                        <div class="item-details">
+                            <h3>Virgin Mojito</h3>
+                            <p>Refreshing blend of mint, lime, and sparkling water.</p>
+                            <div class="item-footer">
+                                <span class="price">₹149</span>
+                                <button class="btn btn-outline btn-sm">Add <i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <h2><i class="fa-solid fa-pepper-hot"></i> Spicy <span>Villa</span></h2>
+                <p>Taste the fire of flavors with our premium multi-cuisine offerings. Your satisfaction is our recipe.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="menu.html">Our Menu</a></li>
+                    <li><a href="reservations.html">Book a Table</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-order">
+                <h3>Order Online</h3>
+                <div class="delivery-partners">
+                    <a href="#" class="partner-btn btn-zomato">Order on Zomato</a>
+                    <a href="#" class="partner-btn btn-swiggy">Order on Swiggy</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Spicy Villa. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Actions -->
+    <div class="floating-actions">
+        <a href="https://wa.me/919876543210" class="float-btn float-whatsapp" target="_blank" title="Chat on WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="tel:+919876543210" class="float-btn float-call" title="Call Now">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
