@@ -3,12 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spicy Villa | Premium Multi-Cuisine Experience</title>
-    <meta name="description" content="Taste the Fire of Flavors at Spicy Villa. A premium multi-cuisine experience featuring Indian, Chinese, and Fast Food.">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Spicy Villa | Cinematic Luxury Dining Experience</title>
+    <meta name="description" content="Taste the Fire of Flavors at Spicy Villa. A premium multi-cuisine cinematic experience.">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- CSS -->
@@ -16,159 +12,153 @@
 </head>
 <body>
 
+    <!-- Page Loader -->
+    <div id="page-loader">
+        <h1 class="loader-logo">SPICY<span>VILLA</span></h1>
+        <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
     <!-- Navbar -->
     <header id="header">
         <div class="container navbar">
-            <a href="index.html" class="logo">
-                <i class="fa-solid fa-pepper-hot"></i> Spicy <span>Villa</span>
-            </a>
+            <a href="index.html" class="logo brand-font">SPICY<span>VILLA</span></a>
             <nav class="nav-links">
                 <a href="index.html" class="nav-item">Home</a>
-                <a href="about.html" class="nav-item">About</a>
+                <a href="about.html" class="nav-item">Experience</a>
                 <a href="menu.html" class="nav-item">Menu</a>
                 <a href="gallery.html" class="nav-item">Gallery</a>
                 <a href="reservations.html" class="nav-item">Reservations</a>
-                <a href="contact.html" class="nav-item">Contact</a>
             </nav>
             <div class="nav-actions">
                 <a href="menu.html" class="btn btn-outline">Order Now</a>
                 <a href="reservations.html" class="btn btn-primary">Book Table</a>
-                <div class="hamburger">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content fade-in-up">
-            <div class="rating-badge">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <span>4.9/5 from 5000+ Happy Customers</span>
-            </div>
-            <h1>Taste the <span class="highlight-text">Fire</span> of Flavors</h1>
-            <p>Experience a premium culinary journey with authentic Indian, zesty Chinese, and mouth-watering fast food in a luxurious ambiance.</p>
-            <div class="hero-buttons">
-                <a href="menu.html" class="btn btn-primary btn-large">Order Now <i class="fa-solid fa-arrow-right"></i></a>
-                <a href="reservations.html" class="btn btn-glass btn-large">Book a Table <i class="fa-regular fa-calendar-check"></i></a>
-            </div>
-        </div>
-    </section>
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav">
+        <a href="index.html" class="mobile-nav-item"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="menu.html" class="mobile-nav-item"><i class="fa-solid fa-utensils"></i>Menu</a>
+        <a href="reservations.html" class="mobile-nav-item"><i class="fa-regular fa-calendar-check"></i>Book</a>
+        <a href="contact.html" class="mobile-nav-item"><i class="fa-solid fa-location-dot"></i>Contact</a>
+    </nav>
 
-    <!-- Special Features Section -->
-    <section class="specials section-padding bg-dark">
-        <div class="container text-center fade-in-up">
-            <h4 class="section-subtitle">Why Choose Us</h4>
-            <h2 class="section-title text-light">Signature Highlights</h2>
-            
-            <div class="specials-grid">
-                <div class="special-card glass-card">
-                    <div class="icon"><i class="fa-solid fa-fire"></i></div>
-                    <h3>Chef's Special</h3>
-                    <p>Secret recipes crafted with unique spice blends exclusively available at Spicy Villa.</p>
-                </div>
-                <div class="special-card glass-card">
-                    <div class="icon"><i class="fa-solid fa-tags"></i></div>
-                    <h3>Today's Offer</h3>
-                    <p>Enjoy a 20% discount on all family combo meals. <span class="text-primary">Limited time only!</span></p>
-                </div>
-                <div class="special-card glass-card">
-                    <div class="icon"><i class="fa-solid fa-crown"></i></div>
-                    <h3>Best Sellers</h3>
-                    <p>Try our highly rated Butter Chicken and Wood-fired Pizzas loved by everyone.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <main id="page-main">
+        <!-- Cinematic Hero Section -->
+        <section class="hero">
+            <!-- Ultra-Cinematic Luxury Food Background -->
+            <div class="hero-bg-image"></div>
+            <div class="hero-overlay"></div>
+            <div id="particles-js"></div>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section-padding">
-        <div class="container text-center">
-            <h4 class="section-subtitle">Testimonials</h4>
-            <h2 class="section-title">What Our Guests Say</h2>
-            
-            <div class="testimonial-container fade-in-up">
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                    </div>
-                    <p class="review-text">"Absolutely mind-blowing! The Butter Chicken is the best I've ever had. The ambiance is so warm and perfect for family dinners. A must-visit place!"</p>
-                    <div class="customer">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rahul Sharma">
-                        <div>
-                            <h4>Rahul Sharma</h4>
-                            <span>Food Blogger</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <p class="review-text">"Loved the interior and the vibe. We tried their Chinese and Fast Food section, and the loaded fries were just amazing. Great service too!"</p>
-                    <div class="customer">
-                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Patel">
-                        <div>
-                            <h4>Priya Patel</h4>
-                            <span>Regular Customer</span>
-                        </div>
-                    </div>
+            <div class="container hero-content">
+                <h1>Taste the <span class="text-primary">Fire</span> of Flavors</h1>
+                <p>Luxury Dining Crafted With Spice, Passion & Emotion</p>
+                <div class="hero-buttons">
+                    <a href="menu.html" class="btn btn-primary">Explore Menu</a>
+                    <a href="reservations.html" class="btn btn-glass">Reserve a Table</a>
                 </div>
             </div>
-        </div>
-    </section>
+
+            <!-- Live Conversion Stats -->
+            <div class="live-stats">
+                <div class="stat-item">
+                    <span class="stat-num" data-target="50000" data-plus="true">0</span>
+                    <span class="stat-label">Happy Customers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="4.9">0</span>
+                    <span class="stat-label">Star Rating</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num" data-target="120000" data-plus="true">0</span>
+                    <span class="stat-label">Dishes Served</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chef's Special Spotlight -->
+        <section class="spotlight-section">
+            <div class="spotlight-bg"></div>
+            <div class="container spotlight-grid">
+                <div class="chef-img-container fade-in-left">
+                    <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=800&q=80" alt="Master Chef">
+                    <div class="smoke-effect"></div>
+                </div>
+                <div class="spotlight-text fade-in-right">
+                    <h4 class="section-subtitle">Exclusive Culinary Art</h4>
+                    <h2 class="section-title">The Chef's <span class="text-primary">Signature</span> Masterpiece</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 30px; font-size: 1.1rem;">
+                        A closely guarded secret recipe, combining hand-ground spices from the heart of India with the fiery wok techniques of traditional Chinese cooking. This dish is not just food; it is an emotional journey.
+                    </p>
+                    <div class="spice-meter" style="margin-bottom: 20px;">
+                        <span style="margin-right: 15px; font-weight: bold; color: var(--accent);">Spice Level: Inferno</span>
+                        <i class="fa-solid fa-pepper-hot spice-icon active"></i>
+                        <i class="fa-solid fa-pepper-hot spice-icon active"></i>
+                        <i class="fa-solid fa-pepper-hot spice-icon active"></i>
+                        <i class="fa-solid fa-pepper-hot spice-icon active"></i>
+                    </div>
+                    <a href="menu.html" class="btn btn-outline">Experience the Fire</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-grid">
-            <div class="footer-brand">
-                <h2><i class="fa-solid fa-pepper-hot"></i> Spicy <span>Villa</span></h2>
+            <div class="footer-brand fade-in-up">
+                <h2 class="brand-font">SPICY<span class="text-primary">VILLA</span></h2>
                 <p>Taste the fire of flavors with our premium multi-cuisine offerings. Your satisfaction is our recipe.</p>
                 <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
-            <div class="footer-links">
+            <div class="footer-links fade-in-up">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="menu.html">Our Menu</a></li>
-                    <li><a href="reservations.html">Book a Table</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">The Experience</a></li>
+                    <li><a href="menu.html">Cinematic Menu</a></li>
+                    <li><a href="reservations.html">Reserve Table</a></li>
+                    <li><a href="contact.html">Location & Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-order">
+            <div class="footer-order fade-in-up">
                 <h3>Order Online</h3>
-                <div class="delivery-partners">
-                    <a href="#" class="partner-btn btn-zomato">Order on Zomato</a>
-                    <a href="#" class="partner-btn btn-swiggy">Order on Swiggy</a>
-                </div>
+                <a href="#" class="partner-btn btn-zomato">Order on Zomato</a>
+                <a href="#" class="partner-btn btn-swiggy">Order on Swiggy</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Spicy Villa. All Rights Reserved.</p>
+            <p>&copy; 2026 Spicy Villa Luxury Dining. All Rights Reserved.</p>
         </div>
     </footer>
 
     <!-- Floating Actions -->
     <div class="floating-actions">
-        <a href="https://wa.me/919876543210" class="float-btn float-whatsapp" target="_blank" title="Chat on WhatsApp">
+        <a href="https://wa.me/919876543210" class="float-btn float-whatsapp" title="VIP WhatsApp Service">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
-        <a href="tel:+919876543210" class="float-btn float-call" title="Call Now">
+        <a href="tel:+919876543210" class="float-btn float-call" title="Concierge Call">
             <i class="fa-solid fa-phone"></i>
         </a>
     </div>
 
+    <!-- Scripts -->
+    <!-- GSAP for scroll animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Vanilla Tilt for 3D Cards -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <!-- Custom Script -->
     <script src="script.js"></script>
 </body>
 </html>
+

@@ -3,137 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book a Table | Spicy Villa</title>
-    <meta name="description" content="Reserve your table at Spicy Villa.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Reserve a Table | Spicy Villa</title>
+    <meta name="description" content="Secure your luxury dining experience at Spicy Villa.">
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Page Loader -->
+    <div id="page-loader">
+        <h1 class="loader-logo">SPICY<span>VILLA</span></h1>
+        <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
     <!-- Navbar -->
     <header id="header">
         <div class="container navbar">
-            <a href="index.html" class="logo">
-                <i class="fa-solid fa-pepper-hot"></i> Spicy <span>Villa</span>
-            </a>
+            <a href="index.html" class="logo brand-font">SPICY<span>VILLA</span></a>
             <nav class="nav-links">
                 <a href="index.html" class="nav-item">Home</a>
-                <a href="about.html" class="nav-item">About</a>
+                <a href="about.html" class="nav-item">Experience</a>
                 <a href="menu.html" class="nav-item">Menu</a>
                 <a href="gallery.html" class="nav-item">Gallery</a>
                 <a href="reservations.html" class="nav-item">Reservations</a>
-                <a href="contact.html" class="nav-item">Contact</a>
             </nav>
             <div class="nav-actions">
                 <a href="menu.html" class="btn btn-outline">Order Now</a>
                 <a href="reservations.html" class="btn btn-primary">Book Table</a>
-                <div class="hamburger">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
             </div>
         </div>
     </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="page-header-content fade-in-up">
-            <h1>Reservations</h1>
-            <p>Book Your Experience</p>
-        </div>
-    </section>
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav">
+        <a href="index.html" class="mobile-nav-item"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="menu.html" class="mobile-nav-item"><i class="fa-solid fa-utensils"></i>Menu</a>
+        <a href="reservations.html" class="mobile-nav-item"><i class="fa-regular fa-calendar-check"></i>Book</a>
+        <a href="contact.html" class="mobile-nav-item"><i class="fa-solid fa-location-dot"></i>Contact</a>
+    </nav>
 
-    <!-- Reservation Section -->
-    <section id="reservation" class="reservation-contact section-padding bg-dark text-light">
-        <div class="container form-contact-grid">
-            <!-- Reservation Form -->
-            <div class="reservation-form glass-card fade-in-left">
-                <h4 class="section-subtitle">Book A Table</h4>
-                <h2>Reserve Your Spot</h2>
-                <p>Ensure your perfect evening by booking ahead. <span class="highlight-text">Hurry, tables fill fast!</span></p>
-                <form id="bookingForm">
-                    <div class="input-group">
-                        <input type="text" id="name" required placeholder="Your Name">
-                    </div>
-                    <div class="input-group">
-                        <input type="tel" id="phone" required placeholder="Phone Number">
-                    </div>
-                    <div class="input-row">
-                        <div class="input-group">
-                            <input type="date" id="date" required>
-                        </div>
-                        <div class="input-group">
-                            <input type="time" id="time" required>
+    <main id="page-main">
+        <!-- Reservation Section with Background -->
+        <section class="reservation-contact" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80'); background-size: cover; background-position: center; position: relative; min-height: 100vh; display: flex; align-items: center;">
+            <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(rgba(10,10,10,0.7), rgba(10,10,10,0.9)); z-index:0;"></div>
+            
+            <div class="container" style="position: relative; z-index: 1; margin-top: 100px;">
+                <div class="spotlight-grid">
+                    <div class="fade-in-left" style="align-self: center;">
+                        <h4 class="section-subtitle">VIP Booking</h4>
+                        <h2 class="section-title brand-font" style="font-size:4rem; text-transform:none;">Secure Your <br><span class="text-primary">Table</span></h2>
+                        <p style="color:var(--text-muted); font-size:1.1rem; line-height:1.8; margin-bottom: 30px;">
+                            Immerse yourself in an unforgettable culinary journey. Due to high demand, we recommend booking your table at least 24 hours in advance.
+                        </p>
+                        <div style="display:flex; align-items:center; gap:20px; background:var(--glass-bg); padding:20px; border-radius:8px; border:1px solid var(--glass-border);">
+                            <i class="fa-solid fa-bell-concierge" style="font-size:2rem; color:var(--accent);"></i>
+                            <div>
+                                <h4 class="brand-font">Concierge Service</h4>
+                                <p style="font-size:0.9rem; color:var(--text-muted);">For events & private dining, call +91 98765 43210</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="input-group">
-                        <select id="guests" required>
-                            <option value="" disabled selected>Number of Guests</option>
-                            <option value="1">1 Person</option>
-                            <option value="2">2 People</option>
-                            <option value="3">3 People</option>
-                            <option value="4">4 People</option>
-                            <option value="5+">5+ People</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-block">Confirm Booking <i class="fa-solid fa-check"></i></button>
-                </form>
-            </div>
 
-            <!-- Image Side -->
-            <div class="contact-info fade-in-right" style="display: flex; align-items: center; justify-content: center;">
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Restaurant Table" style="border-radius: 15px; box-shadow: var(--shadow);">
+                    <!-- Glassmorphism Form -->
+                    <div class="reservation-glass fade-in-right">
+                        <form id="bookingForm">
+                            <div class="input-group">
+                                <input type="text" id="name" required placeholder="Full Name">
+                            </div>
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <input type="tel" id="phone" required placeholder="Phone Number">
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" id="email" required placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="input-row">
+                                <div class="input-group">
+                                    <input type="date" id="date" required>
+                                </div>
+                                <div class="input-group">
+                                    <input type="time" id="time" required>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <select id="guests" required>
+                                    <option value="" disabled selected>Number of Guests</option>
+                                    <option value="2">2 Guests (Intimate)</option>
+                                    <option value="4">4 Guests (Standard)</option>
+                                    <option value="6">6 Guests (Family)</option>
+                                    <option value="8+">8+ Guests (Group)</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <textarea id="requests" rows="2" placeholder="Any special requests? (Dietary, Anniversary, etc.)"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width:100%; font-size:1.1rem;">Confirm Reservation <i class="fa-solid fa-arrow-right"></i></button>
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-grid">
-            <div class="footer-brand">
-                <h2><i class="fa-solid fa-pepper-hot"></i> Spicy <span>Villa</span></h2>
+            <div class="footer-brand fade-in-up">
+                <h2 class="brand-font">SPICY<span class="text-primary">VILLA</span></h2>
                 <p>Taste the fire of flavors with our premium multi-cuisine offerings. Your satisfaction is our recipe.</p>
                 <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
-            <div class="footer-links">
+            <div class="footer-links fade-in-up">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="menu.html">Our Menu</a></li>
-                    <li><a href="reservations.html">Book a Table</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">The Experience</a></li>
+                    <li><a href="menu.html">Cinematic Menu</a></li>
+                    <li><a href="reservations.html">Reserve Table</a></li>
+                    <li><a href="contact.html">Location & Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-order">
+            <div class="footer-order fade-in-up">
                 <h3>Order Online</h3>
-                <div class="delivery-partners">
-                    <a href="#" class="partner-btn btn-zomato">Order on Zomato</a>
-                    <a href="#" class="partner-btn btn-swiggy">Order on Swiggy</a>
-                </div>
+                <a href="#" class="partner-btn btn-zomato">Order on Zomato</a>
+                <a href="#" class="partner-btn btn-swiggy">Order on Swiggy</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Spicy Villa. All Rights Reserved.</p>
+            <p>&copy; 2026 Spicy Villa Luxury Dining. All Rights Reserved.</p>
         </div>
     </footer>
 
     <!-- Floating Actions -->
     <div class="floating-actions">
-        <a href="https://wa.me/919876543210" class="float-btn float-whatsapp" target="_blank" title="Chat on WhatsApp">
+        <a href="https://wa.me/919876543210" class="float-btn float-whatsapp" title="VIP WhatsApp Service">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
-        <a href="tel:+919876543210" class="float-btn float-call" title="Call Now">
+        <a href="tel:+919876543210" class="float-btn float-call" title="Concierge Call">
             <i class="fa-solid fa-phone"></i>
         </a>
     </div>
 
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
+

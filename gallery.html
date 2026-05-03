@@ -3,114 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Spicy Villa</title>
-    <meta name="description" content="A glimpse of the premium ambiance and food at Spicy Villa.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Cinematic Gallery | Spicy Villa</title>
+    <meta name="description" content="A visual journey into the heart of Spicy Villa's culinary art.">
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Page Loader -->
+    <div id="page-loader">
+        <h1 class="loader-logo">SPICY<span>VILLA</span></h1>
+        <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
     <!-- Navbar -->
     <header id="header">
         <div class="container navbar">
-            <a href="index.html" class="logo">
-                <i class="fa-solid fa-pepper-hot"></i> Spicy <span>Villa</span>
-            </a>
+            <a href="index.html" class="logo brand-font">SPICY<span>VILLA</span></a>
             <nav class="nav-links">
                 <a href="index.html" class="nav-item">Home</a>
-                <a href="about.html" class="nav-item">About</a>
+                <a href="about.html" class="nav-item">Experience</a>
                 <a href="menu.html" class="nav-item">Menu</a>
                 <a href="gallery.html" class="nav-item">Gallery</a>
                 <a href="reservations.html" class="nav-item">Reservations</a>
-                <a href="contact.html" class="nav-item">Contact</a>
             </nav>
             <div class="nav-actions">
                 <a href="menu.html" class="btn btn-outline">Order Now</a>
                 <a href="reservations.html" class="btn btn-primary">Book Table</a>
-                <div class="hamburger">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
             </div>
         </div>
     </header>
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="page-header-content fade-in-up">
-            <h1>Gallery</h1>
-            <p>Visuals of Spicy Villa</p>
-        </div>
-    </section>
+    <!-- Mobile Bottom Navigation -->
+    <nav class="mobile-bottom-nav">
+        <a href="index.html" class="mobile-nav-item"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="menu.html" class="mobile-nav-item"><i class="fa-solid fa-utensils"></i>Menu</a>
+        <a href="reservations.html" class="mobile-nav-item"><i class="fa-regular fa-calendar-check"></i>Book</a>
+        <a href="contact.html" class="mobile-nav-item"><i class="fa-solid fa-location-dot"></i>Contact</a>
+    </nav>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="gallery section-padding bg-light">
-        <div class="container">
-            <div class="text-center fade-in-up">
-                <h4 class="section-subtitle">Visuals</h4>
-                <h2 class="section-title">A Glimpse of Spicy Villa</h2>
+    <main id="page-main">
+        <!-- Page Header -->
+        <section class="page-header" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1920&q=80');">
+            <div class="page-header-content fade-in-up">
+                <h1 class="brand-font">Visual Art</h1>
+                <p>A Cinematic Glimpse of Perfection</p>
             </div>
-            <div class="gallery-grid fade-in-up">
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80" alt="Gallery Image 1" class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=400&q=80" alt="Gallery Image 2" class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=400&q=80" alt="Gallery Image 3" class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=400&q=80" alt="Gallery Image 4" class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=400&q=80" alt="Gallery Image 5" class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Gallery Image 6" class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=400&q=80" alt="Gallery Image 7" class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=400&q=80" alt="Gallery Image 8" class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?auto=format&fit=crop&w=400&q=80" alt="Gallery Image 9" class="gallery-item">
+        </section>
+
+        <!-- Gallery Section (Masonry) -->
+        <section id="gallery" class="gallery section-padding">
+            <div class="container">
+                <div class="gallery-masonry fade-in-up">
+                    <!-- High-quality luxury food and ambiance images -->
+                    <div class="gallery-item" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Luxury Ambiance">
+                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                    <div class="gallery-item" data-tilt data-tilt-max="5" data-tilt-speed="400">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Fine Dining Setup">
+                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                    <div class="gallery-item" data-tilt data-tilt-max="5" data-tilt-speed="400">
+                        <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=800&q=80" alt="Paneer Tikka Close-up">
+                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                    <div class="gallery-item" data-tilt data-tilt-max="5" data-tilt-speed="400">
+                        <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?auto=format&fit=crop&w=800&q=80" alt="Chef Preparing Food">
+                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                    <div class="gallery-item" data-tilt data-tilt-max="5" data-tilt-speed="400">
+                        <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=800&q=80" alt="Butter Chicken Macro">
+                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                    <div class="gallery-item" data-tilt data-tilt-max="5" data-tilt-speed="400">
+                        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" alt="Gourmet Plating">
+                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                    <div class="gallery-item" data-tilt data-tilt-max="5" data-tilt-speed="400">
+                        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=80" alt="Romantic Lighting">
+                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                    <div class="gallery-item" data-tilt data-tilt-max="5" data-tilt-speed="400">
+                        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=800&q=80" alt="Cocktails at Bar">
+                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                    <div class="gallery-item" data-tilt data-tilt-max="5" data-tilt-speed="400">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c8a9e9ce?auto=format&fit=crop&w=800&q=80" alt="Sizzling Brownie Reveal">
+                        <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-grid">
-            <div class="footer-brand">
-                <h2><i class="fa-solid fa-pepper-hot"></i> Spicy <span>Villa</span></h2>
+            <div class="footer-brand fade-in-up">
+                <h2 class="brand-font">SPICY<span class="text-primary">VILLA</span></h2>
                 <p>Taste the fire of flavors with our premium multi-cuisine offerings. Your satisfaction is our recipe.</p>
                 <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
-            <div class="footer-links">
+            <div class="footer-links fade-in-up">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="menu.html">Our Menu</a></li>
-                    <li><a href="reservations.html">Book a Table</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">The Experience</a></li>
+                    <li><a href="menu.html">Cinematic Menu</a></li>
+                    <li><a href="reservations.html">Reserve Table</a></li>
+                    <li><a href="contact.html">Location & Contact</a></li>
                 </ul>
             </div>
-            <div class="footer-order">
+            <div class="footer-order fade-in-up">
                 <h3>Order Online</h3>
-                <div class="delivery-partners">
-                    <a href="#" class="partner-btn btn-zomato">Order on Zomato</a>
-                    <a href="#" class="partner-btn btn-swiggy">Order on Swiggy</a>
-                </div>
+                <a href="#" class="partner-btn btn-zomato">Order on Zomato</a>
+                <a href="#" class="partner-btn btn-swiggy">Order on Swiggy</a>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 Spicy Villa. All Rights Reserved.</p>
+            <p>&copy; 2026 Spicy Villa Luxury Dining. All Rights Reserved.</p>
         </div>
     </footer>
 
     <!-- Floating Actions -->
     <div class="floating-actions">
-        <a href="https://wa.me/919876543210" class="float-btn float-whatsapp" target="_blank" title="Chat on WhatsApp">
+        <a href="https://wa.me/919876543210" class="float-btn float-whatsapp" title="VIP WhatsApp Service">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
-        <a href="tel:+919876543210" class="float-btn float-call" title="Call Now">
+        <a href="tel:+919876543210" class="float-btn float-call" title="Concierge Call">
             <i class="fa-solid fa-phone"></i>
         </a>
     </div>
 
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
+
